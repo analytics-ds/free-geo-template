@@ -3,13 +3,27 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forfaits mobiles Free : 5G, sans engagement, de 2 € à 29,99 €/mois — maquette GEO datashake</title>
-<meta name="description" content="Maquette datashake de la page forfaits de mobile.free.fr : DA d'origine conservée, contenu retravaillé pour être lu et cité par ChatGPT, Gemini et les AI Overviews de Google.">
+<title>Forfaits mobiles Free : 5G, sans engagement — maquette GEO datashake</title>
+<meta name="description" content="Maquette datashake de la page mobile.free.fr : page d'origine reproduite à l'identique, ajouts GEO en pastilles pour être lu et cité par ChatGPT, Gemini et les AI Overviews.">
 <meta name="robots" content="noindex, nofollow">
 <link rel="canonical" href="https://mobile.free.fr/">
 <meta property="article:modified_time" content="2026-09-14T09:00:00+02:00">
-<link rel="stylesheet" href="assets/free.css">
-
+<link rel="stylesheet" href="assets/free-site.css">
+<style>
+.mcard{border:1px solid var(--line);border-radius:22px;padding:26px 24px 22px;background:#fff;display:flex;flex-direction:column;position:relative}
+.mcard .k{display:flex;justify-content:space-between;align-items:center;font-weight:700;font-size:1.05rem}.mcard .k i{font-style:italic;font-weight:900;font-size:1.1rem}
+.mcard .go{font-size:3.2rem;font-weight:800;letter-spacing:-.02em;margin:6px 0 0;line-height:1.1}
+.mcard .new{display:inline-block;background:#eaf0fb;color:#1f4bd8;font-size:.8rem;font-weight:700;border-radius:8px;padding:3px 10px;margin:6px 0 0}
+.mcard .dest{display:inline-block;background:var(--paper);border-radius:999px;padding:5px 10px;font-size:.8rem;font-weight:600;margin-top:8px}
+.mcard .pr{display:flex;justify-content:space-between;align-items:flex-end;margin:60px 0 14px}
+.mcard .pr .p{color:var(--red);font-weight:800;font-size:2.6rem;line-height:1;display:flex;align-items:flex-start}.mcard .pr .p small{font-size:1.2rem;margin-top:0}
+.mcard .pr .m{font-size:.95rem;font-weight:700;color:var(--ink)}.mcard .pr .c{font-size:.8rem;color:var(--grey);font-weight:400}.mcard .pr .c b{color:var(--ink);display:block}
+.mcard .tog{font-size:.85rem;color:var(--grey);display:flex;gap:8px;align-items:center}.mcard .tog span{width:38px;height:20px;border-radius:999px;background:#ddd;display:inline-block;position:relative}.mcard .tog span::after{content:'';position:absolute;left:2px;top:2px;width:16px;height:16px;border-radius:50%;background:#fff}
+.mfeat{list-style:none;padding:0;margin:22px 0 0}.mfeat li{display:flex;gap:14px;margin:0 0 16px;font-size:.92rem}.mfeat li .ico{width:26px;flex:none;text-align:center;font-size:1.1rem}.mfeat li b{display:block;font-weight:700}.mfeat li small{color:var(--grey)}
+.mtiles{display:grid;grid-template-columns:570px 1fr;gap:26px;margin-top:26px}.mtiles img{width:100%;display:block;border-radius:22px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1240px;margin:0 auto}.why>div{border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:center;padding-bottom:22px}.why img{width:100%;display:block}.why h4{margin:22px 0 10px;font-size:1.1rem;line-height:1.4}.why h4 span{color:var(--red);display:block}.why p{margin:0 18px;color:var(--grey);font-size:.9rem}.why a{display:inline-block;margin-top:14px;color:var(--grey);font-weight:700;font-size:.9rem}
+.grey{background:var(--paper);padding:20px 0 60px;margin-top:-1px}
+</style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[
  {"@type":"ListItem","position":1,"name":"Accueil","item":"https://www.free.fr/"},
@@ -32,48 +46,39 @@
  {"@type":"Question","name":"Quel forfait mobile pour quelqu'un qui utilise peu son téléphone ?","acceptedAnswer":{"@type":"Answer","text":"Le Forfait 2€ si vous appelez peu et n'utilisez presque pas internet, la Série Free à 12,99 €/mois si vous voulez de l'internet illimité en appels et 110 Go sans jamais y penser."}},
  {"@type":"Question","name":"Puis-je utiliser un forfait 5G avec un téléphone 4G ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Un forfait Free 5G+ fonctionne sur un téléphone 4G, en 4G. La 5G s'active automatiquement le jour où vous changez de téléphone, sans changer de forfait."}},
  {"@type":"Question","name":"Free propose-t-il l'eSIM ?","acceptedAnswer":{"@type":"Answer","text":"Oui, l'eSIM est disponible sur tous les forfaits Free, activable en quelques minutes depuis l'Espace Abonné, et l'option eSIM Watch est incluse dans les forfaits Série Free, 5G+ et Free Max."}}]}
-</script>
-</head>
+</script></head>
 <body>
+<div class="wrap">
+  <div class="topbar"><span>Free Pro</span><span>Assistance</span><span>Boutiques</span><span>Actualités</span></div>
+  <div class="header">
+    <a class="logo" href="#" aria-label="Free"><img src="assets/logo-free.svg" alt="Free"></a>
+    <nav><a href="#">Freebox</a><a href="#">Forfaits mobiles</a><a href="#">Téléphones</a><a href="#">TV</a><a href="#">Bons Plans</a></nav>
+    <div class="right"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6"/></svg> Espace Abonné</span></div>
+  </div>
+</div>
+<div class="band">🎁 <a href="#">Jusqu'à 10€ remboursés</a> sur vos frais de résiliation mobile. ⓘ</div>
 
-<div class="f-top"><div class="wrap"><span>Free Pro</span><span>Assistance</span><span>Boutiques</span><span>Actualités</span></div></div>
-<header class="f-header"><div class="wrap">
-  <a class="f-logo" href="#" aria-label="Free"><img src="assets/logo-free.svg" alt="Free"></a>
-  <nav class="f-nav" aria-label="Navigation principale"><span>Freebox</span><span class="on">Forfaits mobiles</span><span>Téléphones</span><span>TV</span><span>Bons Plans</span></nav>
-  <button class="cta" type="button">Espace Abonné</button>
-</div></header>
+<section class="hero full"><img src="images/hero-mobile.jpg" alt="La rentrée c'est dans la poche, Forfait Free 5G+ internet illimité 9,99 €/mois pour les abonnés Freebox Pop"></section>
 
+<div class="grey">
 <main class="wrap">
-
-  <nav class="breadcrumb geo-mark" aria-label="Fil d'Ariane">
+  <nav class="breadcrumb geo-mark" aria-label="Fil d'Ariane" style="margin-top:22px">
     <button class="geo-badge" type="button" data-tooltip="t1" aria-expanded="false">1</button>
-    <div class="geo-tooltip" id="t1" role="tooltip">
-      <span class="kind">Structure + code</span>
-      <strong>Fil d'Ariane visible et balisé</strong>
-      <p>mobile.free.fr est un site à part, sans lien de structure avec free.fr. Le fil d'Ariane, doublé d'un <code>BreadcrumbList</code>, rattache la page à l'entité Free et donne aux IA le chemin Accueil &gt; Forfaits mobiles.</p>
-    </div>
+    <div class="geo-tooltip" id="t1" role="tooltip"><span class="kind">Structure + code</span><strong>Fil d'Ariane ajouté</strong><p>mobile.free.fr est un site à part, sans lien de structure avec free.fr. Le fil d'Ariane, doublé d'un <code>BreadcrumbList</code>, rattache la page à l'entité Free et donne aux IA le chemin Accueil &gt; Forfaits mobiles.</p></div>
     <a href="#">Accueil</a><span class="sep">/</span><a href="#">Forfaits mobiles</a><span class="sep">/</span><span>Tous les forfaits</span>
   </nav>
 
-  <h1>Forfaits mobiles Free : simples, 5G, sans engagement, de 2 € à 29,99 €/mois</h1>
+  <h2 class="big center" style="margin-top:36px">Des offres mobiles simples, à<br>prix Free et sans engagement</h2>
 
-  <p class="updated geo-mark">
+  <p class="geo-updated geo-mark" style="display:table;margin:0 auto 22px">
     <button class="geo-badge" type="button" data-tooltip="t2" aria-expanded="false">2</button>
-    <div class="geo-tooltip" id="t2" role="tooltip">
-      <span class="kind">Fraîcheur</span>
-      <strong>Date de mise à jour affichée et balisée</strong>
-      <p>Les prix des forfaits bougent tous les mois. Une date visible, en <code>&lt;time&gt;</code> et en <code>dateModified</code>, dit aux IA que la page est à jour et évite qu'elles recopient un prix périmé lu chez un affilié.</p>
-    </div>
+    <div class="geo-tooltip" id="t2" role="tooltip"><span class="kind">Fraîcheur</span><strong>Date de mise à jour visible et balisée</strong><p>Les prix des forfaits bougent tous les mois. Une date visible, en <code>&lt;time&gt;</code> et en <code>dateModified</code>, dit aux IA que la page est à jour et évite qu'elles recopient un prix périmé lu chez un comparateur.</p></div>
     Forfaits et prix mis à jour le <time datetime="2026-09-14">14 septembre 2026</time>
   </p>
 
-  <div class="quick geo-mark">
+  <div class="geo-quick geo-mark">
     <button class="geo-badge" type="button" data-tooltip="t3" aria-expanded="false">3</button>
-    <div class="geo-tooltip" id="t3" role="tooltip">
-      <span class="kind">Sémantique</span>
-      <strong>Résumé rapide en tête de page</strong>
-      <p>La réponse à « quel est le meilleur forfait mobile », « le moins cher », « sans engagement » tient en cinq lignes, en tête de page, avant les cartes. C'est ce qu'une IA lit en premier et recopie. Aujourd'hui ChatGPT classe Free 5e sur ce prompt derrière Prixtel, B&amp;You, Sosh et RED.</p>
-    </div>
+    <div class="geo-tooltip" id="t3" role="tooltip"><span class="kind">Sémantique</span><strong>Résumé rapide avant les cartes</strong><p>La réponse à « quel est le meilleur forfait mobile », « le moins cher », « sans engagement » tient en cinq lignes, avant les cartes. C'est ce qu'une IA lit en premier et recopie. Aujourd'hui ChatGPT classe Free 5e sur ce prompt, derrière Prixtel, B&amp;You, Sosh et RED.</p></div>
     <strong>En résumé.</strong> Free Mobile propose quatre forfaits, tous <strong>sans engagement</strong> et compatibles 5G, de <strong>2 € à 29,99 €/mois</strong>.
     <ul>
       <li>Le moins cher : <strong>Forfait 2€</strong>, 2 h d'appels, SMS illimités, offert aux abonnés Freebox.</li>
@@ -83,121 +88,112 @@
     </ul>
   </div>
 
-  <div class="section-head" id="offres"><h2>Des offres mobiles simples, à prix Free et sans engagement</h2><span class="cond">Prix TTC, sans engagement</span></div>
-  <div class="cards">
-    <article class="card">
-      <span class="eyebrow">Série Free · 110 Go</span><h3>Série Free</h3><p class="sub">Le forfait qui va droit au but.</p>
-      <div class="price"><span class="big">12</span><span class="cents">€99</span><span class="per">/mois</span></div>
-      <p class="cond">pendant 1 an puis Forfait Free 5G+</p><span class="badge">Sans engagement</span>
-      <ul><li>110 Go en 5G en France métropolitaine</li><li>Appels, SMS, MMS illimités</li><li>30 Go en Europe et DOM</li><li>Option eSIM Watch incluse, appli Free TV</li></ul>
-      <a class="btn" href="#">Découvrir la Série Free</a>
+  <div class="pills center"><span>Forfait 2€</span><span class="on">Forfaits 5G/5G+</span></div>
+
+  <div class="cards" id="offres">
+    <article class="mcard">
+      <div class="k"><span>Série Free</span><i>5G</i></div><div class="go">110 Go</div>
+      <div class="pr"><div><div class="p">12<small>€99</small></div><div class="m">/mois</div><div class="c">pendant 1 an puis Forfait Free 5G+<b>Sans engagement</b></div></div></div>
+      <a class="btn-red" href="#">S'abonner</a>
+      <ul class="mfeat"><li><span class="ico">📶</span><span><b>110 Go en 5G</b><small>en France métropolitaine</small></span></li><li><span class="ico">📞</span><span><b>Appels, SMS, MMS illimités</b><small>en France métropolitaine</small></span></li><li><span class="ico">✈️</span><span><b>30 Go en 5G ou 4G en Europe, DOM</b><small>et appels, SMS illimités depuis Europe &amp; DOM</small></span></li><li><span class="ico">⌚</span><span><b>Option eSIM Watch incluse</b><small>en France et à l'étranger</small></span></li><li><span class="ico">🛡</span><span><b>Free mVPN</b><small>en France</small></span></li><li><span class="ico"><img src="images/logo-freetv.png" alt="" style="width:26px"></span><span><b>Appli Free TV</b><small>plus de 300 chaînes incluses</small></span></li></ul>
+      <a class="more" href="#">Découvrir la Série Free ›</a>
     </article>
-    <article class="card star">
-      <span class="ribbon">Le plus choisi</span>
-      <span class="eyebrow">Forfait Free 5G+ · 350 Go</span><h3>Forfait Free 5G+</h3><p class="sub">350 Go en 5G/5G+, et 9,99 €/mois avec une Freebox.</p>
-      <div class="price"><span class="big">19</span><span class="cents">€99</span><span class="per">/mois</span></div>
-      <p class="cond">9,99 €/mois pour les abonnés Freebox</p><span class="badge">Sans engagement</span>
-      <ul><li>350 Go en 5G/5G+ en France métropolitaine</li><li>Appels, SMS, MMS illimités</li><li>35 Go dans plus de 115 destinations</li><li>Option eSIM Watch incluse, Free mVPN, appli Free TV</li></ul>
-      <a class="btn" href="#">Découvrir le Forfait Free 5G+</a>
+    <article class="mcard">
+      <div class="k"><span>Forfait Free 5G+</span><i>5G+</i></div><div class="go">350 Go</div>
+      <div class="pr"><div><div class="p">19<small>€99</small></div><div class="m">/mois</div><div class="c"><b>Sans engagement</b></div></div><div class="tog">Abonné Freebox <span></span></div></div>
+      <a class="btn-red" href="#">S'abonner</a>
+      <ul class="mfeat"><li><span class="ico">📶</span><span><b>350 Go en 5G/5G+</b><small>en France métropolitaine</small></span></li><li><span class="ico">📞</span><span><b>Appels, SMS, MMS illimités</b><small>en France métropolitaine</small></span></li><li><span class="ico">✈️</span><span><b>35 Go en 5G ou 4G dans +115 destinations</b><small>et appels, SMS, MMS illimités depuis +65 destinations</small></span></li><li><span class="ico">⌚</span><span><b>Option eSIM Watch incluse</b><small>en France et à l'étranger</small></span></li><li><span class="ico">🛡</span><span><b>Free mVPN</b><small>en France</small></span></li><li><span class="ico"><img src="images/logo-freetv.png" alt="" style="width:26px"></span><span><b>Appli Free TV</b><small>plus de 300 chaînes incluses</small></span></li></ul>
+      <a class="more" href="#">Découvrir le Forfait Free 5G+ ›</a>
     </article>
-    <article class="card">
-      <span class="eyebrow">Forfait Free Max · illimité</span><h3>Forfait Free Max</h3><p class="sub">Internet illimité, en France et dans plus de 140 destinations.</p>
-      <div class="price"><span class="big">29</span><span class="cents">€99</span><span class="per">/mois</span></div>
-      <p class="cond">19,99 €/mois pour les abonnés Freebox</p><span class="badge">Sans engagement</span>
-      <ul><li>Internet illimité en 5G/5G+ en France métropolitaine</li><li>Appels, SMS, MMS illimités vers Europe, Suisse, Andorre et DOM</li><li>Internet illimité dans plus de 140 destinations</li><li>Option eSIM Watch incluse, Free mVPN, appli Free TV</li></ul>
-      <a class="btn" href="#">Découvrir le Forfait Free Max</a>
+    <article class="mcard">
+      <div class="k"><span>Forfait Free Max</span><i>5G+</i></div><div class="go">illimité</div><span class="new">Nouveau</span><br><span class="dest">🇫🇷 +140 destinations</span>
+      <div class="pr" style="margin-top:22px"><div><div class="p">29<small>€99</small></div><div class="m">/mois</div><div class="c"><b>Sans engagement</b></div></div><div class="tog">Abonné Freebox <span></span></div></div>
+      <a class="btn-red" href="#">S'abonner</a>
+      <ul class="mfeat"><li><span class="ico">📶</span><span><b>Internet illimité en 5G/5G+</b><small>en France métropolitaine</small></span></li><li><span class="ico">📞</span><span><b>Appels, SMS, MMS illimités</b><small>en France métropolitaine et vers Europe, Suisse, Andorre et DOM</small></span></li><li><span class="ico">✈️</span><span><b>Internet illimité en 5G ou 4G dans +140 destinations</b><small>dont Europe, DOM, Suisse, États-Unis, Canada, Maroc, Algérie, Tunisie, Chine, Japon, Thaïlande, Brésil</small></span></li><li><span class="ico">⌚</span><span><b>Option eSIM Watch incluse</b><small>en France et à l'étranger</small></span></li><li><span class="ico">🛡</span><span><b>Free mVPN</b><small>en France</small></span></li><li><span class="ico"><img src="images/logo-freetv.png" alt="" style="width:26px"></span><span><b>Appli Free TV</b><small>plus de 300 chaînes incluses</small></span></li></ul>
+      <a class="more" href="#">Découvrir le Forfait Free Max ›</a>
     </article>
   </div>
 
-  <div class="section-head geo-mark" style="margin-top:44px">
+  <div class="geo-mark" style="margin-top:50px">
     <button class="geo-badge" type="button" data-tooltip="t4" aria-expanded="false">4</button>
-    <div class="geo-tooltip" id="t4" role="tooltip">
-      <span class="kind">Sémantique + structure</span>
-      <strong>Tableau comparatif en HTML, Forfait 2€ compris</strong>
-      <p>La page d'origine met en avant trois forfaits et renvoie le Forfait 2€ dans un onglet chargé en JavaScript. Un <code>&lt;table&gt;</code> HTML avec les quatre forfaits et une ligne par critère donne aux IA la matière exacte pour répondre « compare-moi les forfaits » et « quel forfait à moins de 5 euros ».</p>
-    </div>
-    <h2>Comparer les forfaits Free en un coup d'œil</h2>
-  </div>
-  <div class="table-wrap">
-    <table class="compare">
+    <div class="geo-tooltip" id="t4" role="tooltip"><span class="kind">Sémantique + structure</span><strong>Tableau comparatif en HTML, Forfait 2€ compris</strong><p>La page d'origine met en avant trois forfaits et renvoie le Forfait 2€ dans un onglet chargé en JavaScript. Un <code>&lt;table&gt;</code> HTML avec les quatre forfaits et une ligne par critère donne aux IA la matière exacte pour répondre « compare-moi les forfaits » et « quel forfait à moins de 5 euros ».</p></div>
+    <h2 class="big" style="margin-top:0;font-size:2rem">Comparer les forfaits Free en un coup d'œil.</h2>
+    <div class="table-wrap" style="background:#fff"><table class="compare">
       <thead><tr><th>Critère</th><th>Forfait 2€</th><th>Série Free</th><th>Forfait Free 5G+</th><th>Forfait Free Max</th></tr></thead>
       <tbody>
-        <tr><th>Prix</th><td><strong>2 €/mois</strong>, 0 € avec une Freebox</td><td><strong>12,99 €/mois</strong> la 1re année</td><td><strong>19,99 €/mois</strong>, 9,99 € avec une Freebox</td><td><strong>29,99 €/mois</strong>, 19,99 € avec une Freebox</td></tr>
+        <tr><th>Prix</th><td><b>2 €/mois</b>, 0 € avec une Freebox</td><td><b>12,99 €/mois</b> la 1re année</td><td><b>19,99 €/mois</b>, 9,99 € avec une Freebox</td><td><b>29,99 €/mois</b>, 19,99 € avec une Freebox</td></tr>
         <tr><th>Data en France</th><td>50 Mo</td><td>110 Go en 5G</td><td>350 Go en 5G/5G+</td><td>illimitée en 5G/5G+</td></tr>
         <tr><th>Appels et SMS</th><td>2 h d'appels, SMS/MMS illimités</td><td>illimités</td><td>illimités</td><td>illimités, aussi vers Europe, Suisse, Andorre, DOM</td></tr>
         <tr><th>À l'étranger</th><td>—</td><td>30 Go, Europe et DOM</td><td>35 Go, +115 destinations</td><td>internet illimité, +140 destinations</td></tr>
         <tr><th>eSIM</th><td>oui</td><td>oui, eSIM Watch incluse</td><td>oui, eSIM Watch incluse</td><td>oui, eSIM Watch incluse</td></tr>
         <tr><th>Engagement</th><td>sans</td><td>sans</td><td>sans</td><td>sans</td></tr>
         <tr><th>Pour qui</th><td>appels occasionnels, second téléphone</td><td>usage simple, budget serré</td><td>usage quotidien, famille Freebox</td><td>gros consommateurs, voyageurs</td></tr>
-      </tbody>
-    </table>
+      </tbody></table></div>
+    <p class="caption">Prix TTC constatés sur mobile.free.fr le 14 septembre 2026. Le tarif abonné Freebox s'applique dans la limite de 4 forfaits par foyer (Free Family).</p>
   </div>
-  <p class="caption">Prix TTC constatés sur mobile.free.fr le 14 septembre 2026. Le tarif abonné Freebox s'applique dans la limite de 4 forfaits par foyer (Free Family).</p>
 
-  <div class="section-head geo-mark" style="margin-top:44px">
+  <div class="mtiles"><img src="images/tile-bonsplans.jpg" alt="Découvrez les bons plans Free"><img src="images/tile-telephones.jpg" alt="Quel téléphone est fait pour vous ?"></div>
+
+  <div class="geo-mark" style="margin-top:50px">
     <button class="geo-badge" type="button" data-tooltip="t5" aria-expanded="false">5</button>
-    <div class="geo-tooltip" id="t5" role="tooltip">
-      <span class="kind">Sémantique</span>
-      <strong>Une réponse par profil d'usage</strong>
-      <p>« Quel forfait quand on utilise peu son téléphone », « pour un senior », « pour un étudiant », « pour toute la famille » : autant de prompts sans réponse sur mobile.free.fr. Quatre blocs, une recommandation nette chacun, écrits comme une IA répond.</p>
+    <div class="geo-tooltip" id="t5" role="tooltip"><span class="kind">Sémantique</span><strong>Une réponse par profil d'usage</strong><p>« Quel forfait quand on utilise peu son téléphone », « pour un senior », « pour un étudiant », « pour toute la famille » : autant de prompts sans réponse sur mobile.free.fr. Quatre blocs, une recommandation nette chacun, écrits comme une IA répond.</p></div>
+    <h2 class="big" style="margin-top:0;font-size:2rem">Quel forfait Free choisir selon votre usage.</h2>
+    <div class="who" style="grid-template-columns:repeat(4,1fr)">
+      <div style="background:#fff"><h4>Vous appelez, vous envoyez des SMS, internet reste occasionnel</h4><p>Pas de data à surveiller, pas de mauvaise surprise, résiliable quand vous voulez.</p><span class="pick">Forfait 2€, ou Série Free pour 110 Go sans y penser</span></div>
+      <div style="background:#fff"><h4>Un étudiant, un premier forfait à son nom</h4><p>110 Go en 5G, appels illimités et 30 Go en Europe pour 12,99 € la première année.</p><span class="pick">Série Free, 12,99 €/mois</span></div>
+      <div style="background:#fff"><h4>Une famille déjà chez Freebox</h4><p>Jusqu'à 4 forfaits 5G+ à 9,99 €/mois grâce à Free Family, jusqu'à 480 € d'économies la première année.</p><span class="pick">Forfait Free 5G+, 9,99 €/mois par ligne</span></div>
+      <div style="background:#fff"><h4>Beaucoup de data, des voyages fréquents</h4><p>Internet illimité en France et dans plus de 140 destinations, sans option à ajouter.</p><span class="pick">Forfait Free Max, 29,99 €/mois</span></div>
     </div>
-    <h2>Quel forfait Free choisir selon votre usage</h2>
   </div>
-  <div class="who" style="grid-template-columns:repeat(4,1fr)">
-    <div><h3>Vous appelez, vous envoyez des SMS, et internet reste occasionnel</h3><p>Pas de data à surveiller, pas de mauvaise surprise, résiliable quand vous voulez.</p><span class="pick">Forfait 2€, ou Série Free si vous voulez 110 Go sans y penser</span></div>
-    <div><h3>Un étudiant, un premier forfait à son nom</h3><p>110 Go en 5G, appels illimités et 30 Go en Europe pour 12,99 € la première année.</p><span class="pick">Série Free, 12,99 €/mois</span></div>
-    <div><h3>Une famille déjà chez Freebox</h3><p>Jusqu'à 4 forfaits 5G+ à 9,99 €/mois grâce à Free Family, soit jusqu'à 480 € d'économies la première année.</p><span class="pick">Forfait Free 5G+, 9,99 €/mois par ligne</span></div>
-    <div><h3>Beaucoup de data, des voyages fréquents</h3><p>Internet illimité en France et dans plus de 140 destinations, sans option à ajouter.</p><span class="pick">Forfait Free Max, 29,99 €/mois</span></div>
-  </div>
+</main>
+</div>
 
-  <div class="section-head geo-mark" style="margin-top:44px">
+<section class="wrap" style="padding-top:60px">
+  <h2 class="center" style="margin:0 0 10px">Pourquoi choisir Free ?</h2>
+  <p class="sub" style="text-align:center;margin-bottom:40px">On avait 1000 raisons mais on en a choisi 4.</p>
+  <div class="why geo-mark">
     <button class="geo-badge" type="button" data-tooltip="t6" aria-expanded="false">6</button>
-    <div class="geo-tooltip" id="t6" role="tooltip">
-      <span class="kind">Autorité</span>
-      <strong>Chiffres sourcés</strong>
-      <p>Sur « quel opérateur a le meilleur réseau », ChatGPT cite l'Arcep et classe Free 4e. Les chiffres réseau de Free, sourcés Arcep et ANFR, remettent la marque dans la réponse au lieu de la laisser aux comparateurs.</p>
-    </div>
-    <h2>Pourquoi choisir Free</h2>
-  </div>
-  <div class="facts">
-    <div class="fact"><div class="n">94 %</div><div class="l">De la population couverte en 5G</div><div class="s">Free Mobile, couverture au 30/06/2026 · <a href="https://www.anfr.fr" rel="nofollow">ANFR</a></div></div>
-    <div class="fact"><div class="n">1er</div><div class="l">Réseau 5G de France en nombre de sites</div><div class="s">Observatoire ANFR des déploiements 5G, 2026</div></div>
-    <div class="fact"><div class="n">260</div><div class="l">Boutiques Free en France</div><div class="s">free.fr, réseau de distribution</div></div>
-    <div class="fact"><div class="n">7j/7</div><div class="l">Conseillers joignables par téléphone et chat</div><div class="s">Espace Abonné Free Mobile</div></div>
+    <div class="geo-tooltip" id="t6" role="tooltip"><span class="kind">Autorité</span><strong>Les chiffres existants, désormais sourcés</strong><p>Sur « quel opérateur a le meilleur réseau », ChatGPT cite l'Arcep et classe Free 4e. Le bloc est celui de la page d'origine, on y ajoute la source de chaque chiffre, ANFR et Arcep, pour remettre Free dans la réponse au lieu de la laisser aux comparateurs.</p></div>
+    <div><img src="images/pourquoi-1.jpg" alt=""><h4>On est Free 7j/7 <span>pour vous écouter</span></h4><p>Nos conseillers sont disponibles soit par téléphone¹ soit par chat via votre Espace Abonné.</p><a href="#">Nous contacter ›</a></div>
+    <div><img src="images/pourquoi-2.jpg" alt=""><h4>Nos boutiques <span>sont à deux pas</span></h4><p>Avec plus de 260 boutiques dans toute la France, il y en a forcément une proche de chez vous.</p><a href="#">Trouver une boutique ›</a></div>
+    <div><img src="images/pourquoi-3.jpg" alt=""><h4>On couvre 94% <span>de la population en 5G</span></h4><p>Et on a le plus grand réseau 5G de France en nombre de sites². <span class="geo-src">Observatoire ANFR des déploiements 5G, 2026.</span></p><a href="#">En savoir plus ›</a></div>
+    <div><img src="images/pourquoi-4.jpg" alt=""><h4>On régale <span>toute la famille</span></h4><p>La preuve : grâce à votre Freebox, bénéficiez de 4 Forfaits Free 5G+ Internet illimité à prix ultra réduits.</p><a href="#">Découvrir mes économies ›</a></div>
   </div>
 
-  <div class="section-head geo-mark" style="margin-top:44px">
+  <h2 class="center geo-mark" style="display:table;margin:100px auto 40px">Pour tout capter sur votre forfait mobile
     <button class="geo-badge" type="button" data-tooltip="t7" aria-expanded="false">7</button>
-    <div class="geo-tooltip" id="t7" role="tooltip">
-      <span class="kind">Sémantique + code</span>
-      <strong>FAQ réécrite sur les vraies questions, balisée FAQPage</strong>
-      <p>La FAQ d'origine parle des montres connectées et de Free Flex. Celle-ci reprend les prompts mesurés : le moins cher, sans engagement, changer d'opérateur, peu d'usage, 5G avec un téléphone 4G, eSIM. Réponses en deux phrases, doublées d'un schéma <code>FAQPage</code>.</p>
-    </div>
-    <h2>Les questions qu'on nous pose</h2>
-  </div>
+    <div class="geo-tooltip" id="t7" role="tooltip"><span class="kind">Sémantique + code</span><strong>FAQ réécrite sur les vraies questions, balisée FAQPage</strong><p>La FAQ d'origine parle des montres connectées et de Free Flex. Celle-ci garde le bloc et l'accordéon mais reprend les prompts mesurés : le moins cher, sans engagement, changer d'opérateur, peu d'usage, 5G avec un téléphone 4G, eSIM. Deux phrases par réponse, doublées d'un schéma <code>FAQPage</code>.</p></div>
+  </h2>
   <div class="faq">
     <details open><summary>Quel est le forfait mobile le moins cher chez Free ?</summary><p>Le Forfait 2€ : 2 h d'appels, SMS et MMS illimités et 50 Mo pour 2 €/mois, sans engagement, offert aux abonnés Freebox. Pour un usage internet régulier, la Série Free à 12,99 €/mois donne 110 Go en 5G.</p></details>
-    <details><summary>Les forfaits Free sont-ils sans engagement ?</summary><p>Oui, les quatre forfaits Free Mobile sont sans engagement et résiliables à tout moment, sans frais.</p></details>
-    <details><summary>Comment changer d'opérateur mobile en gardant mon numéro ?</summary><p>Appelez le 3179 (gratuit) pour obtenir votre RIO et renseignez-le à la souscription. Free porte votre numéro et résilie votre ancien opérateur à votre place, en général sous 3 jours ouvrés.</p></details>
+    <details><summary>Quel est le meilleur forfait mobile sans engagement ?</summary><p>Tous les forfaits Free sont sans engagement. Pour un usage courant, la Série Free à 12,99 €/mois ; pour beaucoup de data, le Forfait Free 5G+ à 19,99 €/mois ; pour l'illimité et les voyages, le Forfait Free Max à 29,99 €/mois.</p></details>
+    <details><summary>Comment conserver mon numéro actuel chez Free ?</summary><p>Appelez le 3179 (gratuit) pour obtenir votre RIO et renseignez-le à la souscription. Free porte votre numéro et résilie votre ancien opérateur à votre place, en général sous 3 jours ouvrés.</p></details>
     <details><summary>Quel forfait mobile pour quelqu'un qui utilise peu son téléphone ?</summary><p>Le Forfait 2€ si vous appelez peu et n'utilisez presque pas internet, la Série Free à 12,99 €/mois si vous voulez des appels illimités et 110 Go sans jamais y penser.</p></details>
     <details><summary>Puis-je utiliser un forfait 5G avec un téléphone 4G ?</summary><p>Oui. Un forfait Free 5G+ fonctionne sur un téléphone 4G, en 4G. La 5G s'active automatiquement le jour où vous changez de téléphone, sans changer de forfait.</p></details>
     <details><summary>Free propose-t-il l'eSIM ?</summary><p>Oui, l'eSIM est disponible sur tous les forfaits Free, activable en quelques minutes depuis l'Espace Abonné, et l'option eSIM Watch est incluse dans la Série Free, le Forfait Free 5G+ et le Forfait Free Max.</p></details>
+    <details><summary>Abonné Freebox, ai-je droit à un avantage sur mon forfait mobile ?</summary><p>Oui. Avec Free Family, jusqu'à 4 Forfaits Free 5G+ à 9,99 €/mois ou Forfaits Free Max à 19,99 €/mois pour les abonnés Freebox.</p></details>
   </div>
+</section>
 
-  <p class="sources geo-mark" style="margin-top:34px">
-    <button class="geo-badge" type="button" data-tooltip="t8" aria-expanded="false">8</button>
-    <div class="geo-tooltip" id="t8" role="tooltip">
-      <span class="kind">Code</span>
-      <strong>Données structurées Product, Offer et Organization</strong>
-      <p>mobile.free.fr ne porte aucune donnée structurée. Ici chaque forfait est un <code>Product</code> avec son <code>Offer</code>, la page un <code>WebPage</code> daté, et Free Mobile une <code>Organization</code> rattachée à Free et à Wikidata. C'est ce qui permet à une IA de citer 19,99 € plutôt que le prix d'un comparateur.</p>
-    </div>
-    Sources : ANFR, observatoire des déploiements 5G 2026 · Arcep, observatoire de la satisfaction client 2026 · mobile.free.fr au 14/09/2026.
-  </p>
-</main>
+<section class="reassure geo-mark" style="position:relative">
+  <button class="geo-badge" type="button" data-tooltip="t8" aria-expanded="false" style="top:12px;right:28px">8</button>
+  <div class="geo-tooltip" id="t8" role="tooltip" style="top:48px;right:28px"><span class="kind">Code</span><strong>Données structurées Product, Offer, Organization</strong><p>mobile.free.fr ne porte aucune donnée structurée. Chaque forfait devient un <code>Product</code> avec son <code>Offer</code>, la page un <code>WebPage</code> daté, et Free Mobile une <code>Organization</code> rattachée à Free et à Wikidata. C'est ce qui permet à une IA de citer 19,99 € depuis mobile.free.fr plutôt que depuis un comparateur.</p></div>
+  <div class="wrap">
+    <div><div class="ic">👤</div><h4>Besoin d'un conseil ?</h4><p>Appelez le 1044, nos conseillers vous accompagnent 7j/7.</p></div>
+    <div><div class="ic">★</div><h4>Plus grand réseau 5G</h4><p>en nombre de sites, observatoire ANFR 2026</p></div>
+    <div><div class="ic">★</div><h4>4,4/5 Avis Clients</h4><p>sur 17 556 avis</p></div>
+    <div><div class="ic">♥</div><h4>94 % de la population couverte en 5G</h4><p>Free Mobile, couverture au 30/06/2026</p></div>
+  </div>
+</section>
 
 <footer><div class="wrap">
-  <div class="note">Maquette de démonstration datashake, non affiliée à Free. DA reprise de mobile.free.fr, contenus retravaillés pour la visibilité dans les moteurs IA. Prix et offres à titre illustratif, relevés le 14/09/2026.</div>
-  <div><a href="index.html" style="color:#fff">Voir les autres maquettes</a></div>
+  <div class="cols">
+    <div><h5>Internet</h5><ul><li>Freebox Ultra</li><li>Freebox Ultra Essentiel</li><li>Freebox Pop</li><li>Série Spéciale Freebox Pop S</li><li>Box 5G</li><li>Avantages Free Family</li></ul></div>
+    <div><h5>Forfaits mobiles &amp; téléphones</h5><ul><li>Forfait Free Max</li><li>Forfait Free 5G+</li><li>Série Free</li><li>Forfait 2€</li><li>Communications à l'étranger</li><li>Smartphones</li><li>Option eSIM Watch</li><li>Carte de couverture réseau mobile</li></ul></div>
+    <div><h5>Aide &amp; Contact</h5><ul><li>Applications Free</li><li>Trouver une boutique</li><li>Assistance en ligne</li><li>Nous contacter</li><li>Plan du site</li></ul></div>
+    <div><h5>Société</h5><ul><li>Free Pro</li><li>Free Caraïbe</li><li>Free Réunion</li><li>Le groupe Iliad</li><li style="color:#ff5c5c">Free recrute !</li></ul></div>
+  </div>
+  <div class="legal">¹ Appel gratuit depuis une ligne Free. ² Observatoire ANFR au 01/09/2026. Tarifs TTC au 14/09/2026, offres soumises à conditions.<br><br>Maquette de démonstration datashake, non affiliée à Free : page mobile.free.fr reproduite pour illustrer les ajouts GEO, contenus et visuels à titre illustratif. <a href="index.html" style="color:#fff;text-decoration:underline">Voir les autres maquettes</a></div>
 </div></footer>
 
 <div class="geo-hint" id="geo-hint">
