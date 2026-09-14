@@ -36,6 +36,7 @@ function update(source){
   ne.select('text.vol').attr('fill',d=>d.depth<2?'#bdbdbd':'#5c5c5c'); ne.select('text.pill').attr('fill',d=>(d.data.gpt||'').startsWith('Free absent')?'#d64036':'#5c5c5c');
 }
 update(root);
-const zm=new URLSearchParams(location.search).get('zoom'); if(zm){ const s=document.querySelector('svg'); s.style.transform=`scale(${zm})`; s.style.transformOrigin='0 0'; const wrap=document.getElementById('wrap'); wrap.scrollTop=Math.max(0,(+s.getAttribute('height')*zm-(window.innerHeight-52))/2); }
+if(location.search.includes('bare')){ document.getElementById('top').style.display='none'; document.getElementById('wrap').style.top='0'; }
+const zm=new URLSearchParams(location.search).get('zoom'); if(zm){ const s=document.querySelector('svg'); s.style.transform=`scale(${zm})`; s.style.transformOrigin='0 0'; const wrap=document.getElementById('wrap'); wrap.scrollTop=Math.max(0,(+s.getAttribute('height')*zm-(document.getElementById('wrap').clientHeight))/2); }
 if(location.search.includes('fit')){ const s=document.querySelector('svg'); const H=window.innerHeight-52, W=window.innerWidth; const k=Math.min(H/+s.getAttribute('height'), W/+s.getAttribute('width')); s.style.transform=`scale(${k})`; s.style.transformOrigin='0 0'; document.getElementById('wrap').style.overflow='hidden'; }
 </script></body></html>
